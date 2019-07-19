@@ -7,7 +7,12 @@
 <body>
 <form method="POST" action="https://request-inspector.glitch.me/">
     <br>
+    <header>
+        <h2>Register</h2>
+    </header>
     <br>
+    <main>
+        <section>
     <label for="username">Username</label>
     <input id="username" name="username" type="text" placeholder="username">
     <br>
@@ -16,11 +21,14 @@
     <br>
     <br>
     <input type="submit">
+        </section>
     <br>
     <br>
+        <section>
     <label for="bio"><h2>Bio</h2></label>
     <br>
     <textarea id="bio" name="bio" cols="30" rows="10"></textarea>
+        </section>
     <br>
     <hr>
     <section>
@@ -35,7 +43,8 @@
         <input id="other" name="learn-about" value="other" type="radio"><br>
     </section>
     <hr>
-    <h2><label for="web_browser">What web browser are you using?</h2>
+    <section>
+        <label for="web_browser"><h2>What web browser are you using?</h2></label>
     <select id="web_browser" name="web_browser">
         <option value="google_chrome">Google Chrome</option>
         <option value="Internet Explorer">Internet Explorer</option>
@@ -44,6 +53,8 @@
     <br>
     <br>
     <input type="submit">
+    </section>
+    </main>
 </form>
 </body>
 </html>

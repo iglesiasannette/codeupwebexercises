@@ -75,6 +75,8 @@ fieldset {
     background-color: #0fb784;
 }
 
-.btn-block {width:100%;
-    /* This element should use 100% of the width 100% CHECK*/
+.btn-block {
+    width: 100%;
+    /* This element should use 100% of the width 100% CHECK
+    */
 }

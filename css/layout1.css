@@ -1,0 +1,40 @@
+*{box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+main {
+    display: grid;
+    grid-gap: .5em;
+    background-color: white;
+    grid-template-columns: 20% 1fr 15%;
+    grid-template-rows: 80px 1fr 80px ;
+    grid-template-areas:
+            "header header header"
+            "nav article ads"
+            "nav footer footer";
+
+}
+
+.header{ grid-area: header;
+        background-color: yellow}
+
+.nav{grid-area: nav;
+    background-color: yellow;
+}
+
+.article{grid-area: article;
+    background-color: yellow;
+
+}
+
+.ads{grid-area: ads;
+    background-color: yellow;
+
+}
+
+.footer {grid-area: footer;
+    background-color: yellow;
+}

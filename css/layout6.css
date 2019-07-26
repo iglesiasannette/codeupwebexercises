@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+main {display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 1fr 10% 10%;
+    grid-template-areas:"header header"
+                "nav article"
+                "nav ads"
+                "footer footer";
+    color: black
+
+
+}
+
+.header{grid-area: header;
+        background-color: rgb(139 199 14);
+
+
+}
+
+.nav{grid-area: nav;
+    background-color: rgb(139 199 14);
+
+}
+
+.article{grid-area: article;
+        background-color: rgb(139 199 14);
+
+}
+.ads {grid-area: ads;
+        background-color: rgb(139 199 14);
+
+}
+
+.footer {grid-area: footer;
+        background-color: rgb(139 199 14);
+
+}

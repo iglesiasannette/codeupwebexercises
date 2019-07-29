@@ -1,0 +1,84 @@
+* {box-sizing: border-box;
+    height: 100%;
+    width: 100%;}
+
+body {margin: auto;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+
+}
+ main {
+    display: grid;
+    grid-gap: 2em 1em;
+    background-color: transparent;
+    grid-template-columns: 15% 1fr 15%;
+    grid-template-rows: 100px 1fr 100px ;
+    grid-template-areas:
+            "header header header"
+            "nav article ads"
+            "nav footer footer";
+    margin-left: 2.5%;
+
+}
+
+/* The only rule that matters */
+#video-background {
+    /*  making the video fullscreen  */
+    position:fixed;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: -100;
+    object-fit: cover;
+}
+
+
+
+header {margin-top: 10px;
+    grid-area: header;
+    background-color: black;
+    opacity: .3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgreen;
+}
+
+header h1 {color: white;
+            display: flex;
+            justify-content: center;
+            font-family: a;
+
+}
+.nav {grid-area: nav;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgreen;
+
+}
+
+article {grid-area: article;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgreen;
+
+}
+.ads {grid-area: ads;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgreen;
+
+}
+
+.footer {grid-area: footer;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightgreen;
+
+}
